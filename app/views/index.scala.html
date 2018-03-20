@@ -1,0 +1,24 @@
+@(notes: List[Note])
+
+    @main("Welcome to Play") {
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>#</th>
+                    <th>Title</th>
+                    <th>Last Edited</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody>
+            @for(note <- notes) {
+                <tr>
+                    <td>@note.getId</td>
+                    <td>@note.getTitle</td>
+                    <td>@note.getDescription</td>
+                </tr>
+            }
+            </tbody>
+        </table>
+
+    }
