@@ -33,11 +33,7 @@ public class HomeController extends Controller {
         note2.setDescription("Beschreibung II");
         notes.add(note2);
 
-
-
-
         return ok(views.html.index.render(notes));
-
     }
 
 }

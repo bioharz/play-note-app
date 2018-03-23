@@ -1,6 +1,6 @@
 @(notes: List[Note])
 
-    @main("Welcome to Play") {
+    @main("Welcome to the NoteApp") {
         <table class="table">
             <thead>
                 <tr>
@@ -16,6 +16,10 @@
                     <td>@note.getId</td>
                     <td>@note.getTitle</td>
                     <td>@note.getDescription</td>
+                    <td>
+                        <button class="btn btn-primary" type="edit">Edit</button>
+                        <button class="btn btn-danger" type="remove">Remove</button>
+                    </td>
                 </tr>
             }
             </tbody>
