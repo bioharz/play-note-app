@@ -1,11 +1,13 @@
 package models;
 
+import java.util.Date;
+
 public class Note {
 
     protected int id;
     protected String title;
-    protected String description;
-    protected int lastEdited;
+    protected String note;
+    protected Date lastEdited;
 
     public int getId() {
         return id;
@@ -23,19 +25,19 @@ public class Note {
         this.title = title;
     }
 
-    public String getDescription() {
-        return description;
+    public String getNote() {
+        return note;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
+    public void setNote(String note) {
+        this.note = note;
     }
 
-    public int getLastEdited() {
+    public Date getLastEdited() {
         return lastEdited;
     }
 
-    public void setLastEdited(int lastEdited) {
+    public void setLastEdited(Date lastEdited) {
         this.lastEdited = lastEdited;
     }
 }
